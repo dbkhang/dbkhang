@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/43358f85d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h2>Button</h2>
+        <div class="button">
+            <button class="btl--text">
+                <i class="fa-solid fa-plus btl__icon--plus"></i>
+                <span class="blt__text">Buton</span>
+            </button>
+            <button class="btl--icon">
+                <i class="fa-solid fa-angle-down btl__icon--down"></i>
+            </button>
+        </div>
+    </div>
+
+
+
+    <div>
+        <h2>Textfield </h2>
+        <div class="textfield">
+            <label class="textfield__lable">Field label</label>
+            <div>
+                <input 
+                class="textfield__input"
+                placeholder="Place holder"
+                type="text"
+            ></input>
+            <i class="fa-solid fa-magnifying-glass textfield__icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Dialog</h2>
+        <div class="dialog">
+            <div class="dialog__top">
+                <label class="dialog__label">Tiêu đề</label>
+                <i class="fa-solid fa-xmark icon--x"></i>
+            </div>
+            <div class="dialog__main">
+                <p class="dialog-main__text">Mô tả</p>
+            </div>
+            <div class="dialog__bottom">
+                <button class="dialog__btn--2">Button 2</button>
+                <button class="dialog__btn--1">Button 1</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <h2>Form</h2>
+        <form class="form">
+            <div class="form__top">
+                <label class="form__top__label">Đăng ký tài khoản</label>
+            </div>
+
+            <div class="form__main">
+                <div class="name">
+                    <label class="name__label">Họ và tên</label>
+                    <input class="name__input" placeholder="Họ tên đầy đủ"></input>
+                </div>
+                <div class="gender">
+                    <label>Giới tính</label>
+                    <div>
+                        <input class="gender__input" type="radio" name="gender" value="Nam"></input>
+                        <span class="gender__input--text">Nam</span>
+                    </div>
+                    <div>
+                        <input class="gender__input" type="radio" name="gender" value="Nu"></input>
+                        <span class="gender__input--text">Nữ</span>
+                    </div>
+                </div>
+                <div class="date">
+                    <label class="date__label">Ngày sinh</label>
+                    <input class="date__input" type="date"></input>
+                </div>
+                <div class="email">
+                    <label class="email__label">Địa chỉ email</label>
+                    <input class="email__input" type="email" placeholder="example@email.com"></input>
+                </div>
+            </div>
+
+            <div class="form__bottom">
+                <button class="form__btn--no">Huỷ</button>
+                <button class="form__btn--yes">Đăng ký</button>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <h2>Popup </h2>
+        <div class="popup">
+            <div class="popup__top">
+                <label class="popup__lable">Tiêu đề</label>
+                <i class="fa-solid fa-xmark popup__icon--x"></i>
+            </div>
+            <div class="popup__main">
+                <div class="popup__des">
+                    <p>Mô tả</p>
+                </div>
+                <div class="popup__input-box">
+                    <label>Label 1</label>
+                    <div>
+                        <input class="popup__input"></input>
+                    </div>
+                </div>
+                <div class="popup__input-box">
+                    <label> Label 2</label>
+                    <div>
+                        <input class="popup__input" placeholder="-không chọn-"></input>
+                        <i class="fa-solid fa-chevron-down popup__icon--down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="popup__bottom">
+            <div>
+                <button class="popup__btn--2">Action 2</button>
+            </div>
+            <div>
+                <button class="popup__btn--2">Action 2</button>
+                <button class="popup__btn--1">Action 1</button>
+            </div>
+        </div> 
+    </div>
+    
+    <div>
+        <h2>Toast Message</h2>
+        <div class="toast-message">
+            <div class="toast-message__left">
+                <i class="fa-solid fa-circle-check toast-message__icon--success"></i>
+            </div>
+            <div class="toast-message__right">
+                <div class="toast-message__right-1">
+                    <span class="text__color">Thành công!</span>
+                    <span> Công việc đã bị xoá.</span>
+                </div>
+                <div class="toast-message__right-2">
+                    <span class="text__right">Hoàn tác</span>
+                    <i class="fa-solid fa-xmark toast-message__icon--x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Table</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox"></input>
+                    </th>
+                    <th>Header A</th>
+                    <th>Header B</th>
+                    <th>Header C</th>
+                    <th>Header D</th>
+                    <th>Header E</th>
+                    <th>Header F</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox"></input>
+                    </td>
+                    <td class="sec">
+                        <div class="circle"></div>
+                        Cell A1
+                    </td>
+                    <td>Cell B1</td>
+                    <td>Cell C1</td>
+                    <td>Cell D1</td>
+                    <td>Cell E1</td>
+                    <td class="cuoi">1</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox"></input>
+                    </td>
+                    <td class="sec">
+                        <div class="circle"></div>
+                        Cell A2
+                    </td>
+                    <td>Cell B2</td>
+                    <td>Cell C2</td>
+                    <td>Cell D2</td>
+                    <td>Cell E2</td>
+                    <td  class="cuoi">2</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox"></input>
+                    </td>
+                    <td class="sec">
+                        <div class="circle"></div>
+                        Cell A3
+                    </td>
+                    <td>Cell B3</td>
+                    <td>Cell C3</td>
+                    <td>Cell D3</td>
+                    <td>Cell E3</td>
+                    <td  class="cuoi">3</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox"></input>
+                    </td>
+                    <td class="sec">
+                        <div class="circle"></div>
+                        Cell A4
+                    </td>
+                    <td>Cell B4</td>
+                    <td>Cell C4</td>
+                    <td>Cell D4</td>
+                    <td>Cell E4</td>
+                    <td  class="cuoi">4</td>
+                </tr>
+                <tr class="tr__end">
+                    <td colspan="7">
+                        <div class="line__end">
+                            <div>
+                                Tổng: 4
+                            </div>
+                            <div class="line__end__right">
+                                <div class="record-number">
+                                    <span>Số bản ghi/trang: 10</span>
+                                    <i class="fa-solid fa-chevron-down table__icon"></i>
+                                </div>
+                                <div class="record-number__show">1 - 4 bản ghi</div>
+                                <div>
+                                    <i class="fa-solid fa-chevron-left table__icon"></i>
+                                    <i class="fa-solid fa-chevron-right table__icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div>
+        <h2>Combobox </h2>
+        <div class="combobox">
+            <label class="combobox__lable">Field label</label>
+            <div class="combobox__main">
+                <div class="combobox__top">
+                    <input class="combobox__input" placeholder="Type here"></input>
+                    <i class="fa-solid fa-chevron-down combobox__icon-down"></i>
+                </div>
+                <div class="combobox__list">
+                    <ul class="combobox__ul">
+                        <li class="first__li">-Chọn giá trị-</li>
+                        <li>Hà Nội</li>
+                        <li>TP.Hồ Chí Minh</li>
+                        <li>Đà Nẵng</li>
+                        <li>Hải Phòng</li>
+                        <li>Hải Dương</li>
+                        <li>Hải Dương</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
